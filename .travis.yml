@@ -4,6 +4,9 @@ node_js:
   - 8
 
 jobs:
+  branches:
+    only:
+      - master
   include:
     # Define the release stage that runs semantic-release
     - stage: release
